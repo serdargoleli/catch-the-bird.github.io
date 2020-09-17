@@ -1,0 +1,110 @@
+* {
+  margin: 0;
+  padding: 0;
+  outline: none;
+  box-shadow: none;
+  box-sizing: border-box;
+  font-family: "Grandstander", cursive;
+}
+*:focus {
+  outline: none;
+  box-shadow: none;
+}
+html,
+body {
+  height: 100%;
+  background: #fbfbfb;
+}
+button {
+  cursor: pointer;
+}
+.hide {
+  display: none;
+}
+.play-game-box,
+.game-area {
+  position: absolute;
+
+  width: 100%;
+  height: 100%;
+  background: url("../img/background.gif") center/cover no-repeat;
+  border-radius: 12px;
+  box-shadow: 0 0 15px #74ddd9;
+}
+.btn-play {
+  position: absolute;
+  top: 67%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 10px 50px;
+  border-radius: 15px;
+  background: #76e876;
+  border: none;
+  font-size: 1.3rem;
+}
+.btn-play:hover {
+  background: #2d8a2d;
+  color: #fff;
+}
+
+.play-game-box .text {
+  background: #000000bd;
+  width: 90%;
+  color: #fff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-size: 1.5rem;
+}
+.play-game-box .text h1{
+    margin-bottom: 8px;
+}
+
+.game-area {
+  border-radius: 0;
+  width: 100%;
+  height: 100%;
+  display: none;
+  background: url("../img/sky.gif") center/cover no-repeat;
+  cursor: url("../img/target.svg"), auto;
+}
+.game-area img {
+  position: absolute;
+  width: 80px;
+  height: auto;
+}
+.game-area .header {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  background: #fff;
+  font-size: 1rem;
+  font-weight: 900;
+}
+
+.game-over-box {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background: rgb(0, 0, 0);
+  color: #fff;
+  z-index: -99;
+}
+
+.game-over-box h1,.game-over-box h4 {
+  margin-bottom: 15px;
+}
+.game-over-box button {
+  position: relative;
+  top: 0;
+  left: 0;
+  transform: none;
+}
